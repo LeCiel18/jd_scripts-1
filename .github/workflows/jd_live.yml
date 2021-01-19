@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jx_cfd
+    types: jd_live
 jobs:
   build:
 
@@ -35,10 +35,10 @@ jobs:
         run: |
           cd ~/jd_scripts
           npm install
-      - name: '运行 【京喜财富岛】'
+      - name: '运行 【京东直播】'
         run: |
           cd ~/jd_scripts
-          node jx_cfd.js
+          node jd_live.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
