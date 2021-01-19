@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-ganluguilai-scripts
+name: 同步代码
 on:
   schedule:
     - cron: '1 0,15 * * *'
